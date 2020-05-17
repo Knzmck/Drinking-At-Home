@@ -9,8 +9,8 @@
   <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
-  <link href="./assets/CSS/agecheck.css" rel="stylesheet">
-  <script src="./assets/JS/jquery.agecheck.js"></script>
+  <!-- <link href="./assets/CSS/agecheck.css" rel="stylesheet">
+  <script src="./assets/JS/jquery.agecheck.js"></script> -->
   <link rel="stylesheet" href="./assets/CSS/homepage.css">
   <link rel="stylesheet" href="./assets/CSS/style.css">
 </head>
@@ -100,117 +100,170 @@
     </div>
   </div>
 
-  <!-- Recipes by spirit  -->
-  <div id="spirit-pg" class="hero is-hidden">
-    <main class="spirit-pg">
-
-      <div class="columns is-multiline">
-        <div class="column is-one-fourth card-large">
-          <div class="card-image bottle-img">
-            <figure class="image">
-              <img src="https://www.thecocktaildb.com/images/ingredients/vodka.png" alt="vodka bottle"> </figure>
-          </div>
-          <div class="card-content">
-            <p class="spirit-dsc"> Vodka is a clear, colorless, unaged liquor "made from ethyl alcohol from agricultural
-              origin". It was originally made in Russia from potatoes, but today's vodka, which is almost odorless and
-              tasteless, is usually made from grain, primarily barley and wheat, and occasionally from rye. <br> <br>
-              "The Tsar of all drinks, a drink which makes you strong and clever." </p> <br>
-            <button class="button is-primary is-light vodka spirit" id="vodka">Vodka Cocktails</button>
-          </div>
-        </div>
-        <div class="column is-one-fourth card-large">
-          <div class="card-image bottle-img">
-            <figure class="image">
-              <img src="https://www.thecocktaildb.com/images/ingredients/whiskey.png" alt="whiskey bottle">
-            </figure>
-          </div>
-          <div class="card-content">
-            <p class="spirit-dsc"> Whisky or whiskey is a type of distilled alcoholic beverage made from fermented grain
-              mash. Various grains are used for different varieties, including barley, corn, rye, and wheat.<br>
-              <br>"The oil of conversation, the philosophic wine, the ale that is consumed when good fellows get
-              together..."</p> <br>
-            <button class="button is-primary is-light whiskey spirit" id="whiskey">Whiskey Cocktails</button>
+  <!-- Recipes by Spirit  -->
+  <div id="spirit-pg" class="hero hero is-hidden">
+    <div class="spirit-pg">
+      <div class="tile is-ancestor is-12">
+        <!-- Start of spirit choices 1st line-->
+        <!-- Vodka -->
+        <div class="tile is-vertical">
+          <div class="tile">
+            <div class="tile is-parent is-vertical">
+              <div class="tile is-parent hero is-link">
+                <article class="tile is-child notification is-info">
+                  <p class="title text-center">
+                    <span>
+                      <button class="button is-primary is-light vodka spirit" id="vodka">Vodka Cocktails</button>
+                    </span>
+                  </p>
+                  <figure class="image bottle-img">
+                    <div class="tile"><img src="https://www.thecocktaildb.com/images/ingredients/vodka.png"
+                        alt="vodka bottle"></div>
+                  </figure>
+                </article>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="column is-one-fourth card-large">
-          <div class="card-image bottle-img">
-            <figure class="image">
-              <img src="https://www.thecocktaildb.com/images/ingredients/rum.png" alt="rum bottle"> </figure>
-          </div>
-          <div class="card-content">
-            <p class="spirit-dsc">Rum is a distilled alcoholic drink made by fermenting then distilling sugarcane
-              molasses or sugarcane juice. The distillate, a clear liquid, is usually aged in oak barrels. <br> <br>
-              <br> "The best ideas come while sipping rum."</p><br> <br>
-            <button class="button is-primary is-light rum spirit" id="rum">Rum Cocktails</button>
-          </div>
-        </div>
-        <div class="column is-one-fourth card-large">
-          <div class="card-image bottle-img">
-            <figure class="image">
-              <img src="https://www.thecocktaildb.com/images/ingredients/gin.png" alt="Gin bottle"> </figure>
-          </div>
-          <div class="card-content">
-            <p class="spirit-dsc">Gin is an unaged liquor made by distilling grains such as barley, corn or rye. Its
-              bouquet comes from juniper berries, coriander, herbs and spices, usually added to the grain mash during
-              distillation. <br> "A bar without gin is like an Italian kitchen without pasta" </p> <br> <br>
-            <button class="button is-primary is-light gin spirit" id="gin">Gin Cocktails</button>
+        <!-- Whiskey -->
+        <div class="tile is-vertical">
+          <div class="tile">
+            <div class="tile is-parent is-vertical">
+              <div class="tile is-parent hero is-link">
+                <article class="tile is-child notification is-info">
+                  <p class="title text-center">
+                    <span>
+                      <button class="button is-primary is-light whiskey spirit" id="whiskey">Whiskey Cocktails</button>
+                    </span>
+                  </p>
+                  <figure class="image bottle-img">
+                    <div class="tile">
+                      <img src="https://www.thecocktaildb.com/images/ingredients/whiskey.png" alt="whiskey bottle">
+                    </div>
+                  </figure>
+                </article>
+              </div>
+            </div>
           </div>
         </div>
-
-        <div class="column is-one-fourth card-large">
-          <div class="card-image bottle-img">
-            <figure class="image">
-              <img src="https://www.thecocktaildb.com/images/ingredients/tequila.png" alt="tequila bottle"> </figure>
-          </div>
-          <div class="card-content">
-            <p class="spirit-dsc">Tequila is a distilled spirit made from the agave plant. The liquor can only be
-              produced in designated areas of Mexico. Today, it is one of the most popular liquors in the world" <br>
-              "Tequila probably won't fix your problems but it's worth a shot." </p> <br>
-            <button class="button is-primary is-light tequila spirit" id="tequila">Tequila Cocktails</button>
-          </div>
-        </div>
-        <div class="column is-one-fourth card-large">
-          <div class="card-image bottle-img">
-            <figure class="image">
-              <img src="https://www.thecocktaildb.com/images/ingredients/vermouth.png" alt="vermouth bottle">
-            </figure>
-          </div>
-          <div class="card-content">
-            <p class="spirit-dsc">Technically, vermouth isn’t a spirit but a fortified wine—a flavored, aromatized wine
-              that’s had its ABV boosted with some kind of neutral alcohol (e.g. clear grape brandy) and been flavored
-              with a variety of herbs, botanicals, and spices. Historically, the way vermouth was flavored categorized
-              it as either red (associated with Italy) or white/dry (associated with France).<br>
-              <br>"Do not allow children to mix drinks. It is unseemly and they use too much vermouth."</p> <br>
-            <button class="button is-primary is-light vermouth spirit" id="vermouth">Vermouth Cocktails</button>
+        <!-- Rum -->
+        <div class="tile is-vertical">
+          <div class="tile">
+            <div class="tile is-parent is-vertical">
+              <div class="tile is-parent hero is-link">
+                <article class="tile is-child notification is-info">
+                  <p class="title text-center">
+                    <span>
+                      <button class="button is-primary is-light rum spirit" id="rum">Rum Cocktails</button>
+                    </span>
+                  </p>
+                  <figure class="image bottle-img">
+                    <div class="tile">
+                      <img src="https://www.thecocktaildb.com/images/ingredients/rum.png" alt="rum bottle">
+                    </div>
+                  </figure>
+                </article>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="column is-one-fourth card-large">
-          <div class="card-image bottle-img">
-            <figure class="image">
-              <img src="https://www.thecocktaildb.com/images/ingredients/brandy.png" alt="brandy bottle"> </figure>
-          </div>
-          <div class="card-content">
-            <p class="spirit-dsc">Brandy is a distilled spirit produced from fermented fruit juice. Most often, the
-              fruit is grapes—making brandy distilled wine—though apple, apricot, peach, and other fruits can be used to
-              make brandy. It"s produced around the world as Cognac, Armagnac, pisco, eau-de-vie, and other styles. <br>
-              <br>
-              <br> "The most sensible thing to do to people you hate is to drink their brandy."</p><br> <br>
-            <button class="button is-primary is-light brandy spirit" id="brandy">Brandy Cocktails</button>
+        <!-- Gin -->
+        <div class="tile is-vertical">
+          <div class="tile">
+            <div class="tile is-parent is-vertical">
+              <div class="tile is-parent hero is-link">
+                <article class="tile is-child notification is-info">
+                  <p class="title text-center">
+                    <span>
+                      <button class="button is-primary is-light gin spirit" id="gin">Gin Cocktails</button>
+                    </span>
+                  </p>
+                  <figure class="image bottle-img">
+                    <div class="tile">
+                      <img src="https://www.thecocktaildb.com/images/ingredients/gin.png" alt="Gin bottle">
+                    </div>
+                  </figure>
+                </article>
+              </div>
+            </div>
           </div>
         </div>
-
-        <div class="spirit-info column is-full"> </div>
-        <div class="card column">
-          <div class="spirit-recipes card-content"> </div>
+        <!-- End of spirit choices-->
+      </div>
+      <div class="tile is-ancestor">
+        <!-- Tequila -->
+        <div class="tile is-vertical">
+          <div class="tile">
+            <div class="tile is-parent is-vertical">
+              <div class="tile is-parent hero is-link">
+                <article class="tile is-child notification is-info">
+                  <p class="title text-center">
+                    <span>
+                      <button class="button is-primary is-light tequila spirit" id="tequila">Tequila Cocktails</button>
+                    </span>
+                  </p>
+                  <figure class="image bottle-img">
+                    <div class="tile">
+                      <img src="https://www.thecocktaildb.com/images/ingredients/tequila.png" alt="tequila bottle">
+                    </div>
+                  </figure>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Vermouth -->
+        <div class="tile is-vertical">
+          <div class="tile">
+            <div class="tile is-parent is-vertical">
+              <div class="tile is-parent hero is-link">
+                <article class="tile is-child notification is-info">
+                  <p class="title text-center">
+                    <span>
+                      <button class="button is-primary is-light vermouth spirit" id="vermouth">Vermouth
+                        Cocktails</button>
+                    </span>
+                  </p>
+                  <figure class="image bottle-img">
+                    <div class="tile">
+                      <img src="https://www.thecocktaildb.com/images/ingredients/vermouth.png" alt="vermouth bottle">
+                    </div>
+                  </figure>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Brandy -->
+        <div class="tile is-vertical">
+          <div class="tile">
+            <div class="tile is-parent is-vertical">
+              <div class="tile is-parent hero is-link">
+                <article class="tile is-child notification is-info">
+                  <p class="title text-center">
+                    <span>
+                      <button class="button is-primary is-light brandy spirit" id="brandy">Brandy Cocktails</button>
+                    </span>
+                  </p>
+                  <figure class="image bottle-img">
+                    <div class="tile">
+                      <img src="https://www.thecocktaildb.com/images/ingredients/brandy.png" alt="brandy bottle">
+                    </div>
+                  </figure>
+                </article>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-
-  </div>
-  </div>
-
-  </main>
+      <div class="card column">
+        <div class="spirit-info column is-full"></div>
+        <div class="spirit-recipes card-content"></div>
+      </div>
+    </div>
   </div>
   <!-- end of page -->
+
   <!-- Fun page -->
   <div id="fun-pg" class="hero is-link is-hidden">
     <div class="hero-body">
