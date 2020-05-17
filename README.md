@@ -1,9 +1,11 @@
-# Drinking@Home 
- Stuck at home? Drink alone!
+
+# Drinking@Home -- Stuck at home? Drink alone!
+
 
 ## User Story
 ```
-As a person/bartender to be quarantined at home
+As a person quarantined at home/bartender to be
+
 I WANT to be able to type in a liquor name
 SO THAT I can make a drink at home with said liquor.
 ```
@@ -33,3 +35,4 @@ THEN I’m presented with error
 
 
 [View demo](https://anverch.github.io/Drinking-At-Home/)
+=======

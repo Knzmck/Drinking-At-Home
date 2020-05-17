@@ -13,60 +13,33 @@
   <script src="./assets/JS/jquery.agecheck.js"></script>
   <link rel="stylesheet" href="./assets/CSS/homepage.css">
   <link rel="stylesheet" href="./assets/CSS/style.css">
-
 </head>
 
-
-
 <body>
-  <div class="hero">
-    <div class="hero is-light">
-      <div class="hero-light"
-        style="background-image: url(https://i.imgur.com/EZJLDxR.png?1); background-size: no-repeat">
-        <!--Quarantine Count-->
-        <div class="container">
-          <header class="header">Quarantine Count</header>
-          <div id="clockdiv" display="is-inline-block">
-            <div>
-              <span class="months" id="months"></span>
-              <div class="smalltext">Months</div>
-            </div>
-            <div>
-              <span class="weeks" id="weeks"></span>
-              <div class="smalltext">Weeks</div>
-            </div>
-            <div>
-              <span class="days" id="days"></span>
-              <div class="smalltext">Days</div>
-            </div>
-            <div>
-              <span class="minutes" id="hours"></span>
-              <div class="smalltext">Hours</div>
-            </div>
-          </div>
-        </div>
+  <div class="hero is-mobile">
+    <div class="hero is-light is-mobile">
+      <div class="hero-light bg-image is-mobile">
         <!--Header-->
-        <h1 class="title">Drinking@Home</h1>
-        <!-- NAV BAR -->
         <navbar>
-          <div class="navbar-start">
-            <a id="nav-btn" class="nav-item is-tab is-active home">Home</a>
-            <a id="nav-btn" class="nav-item is-tab spirit">Spirit Type</a>
-            <a id="nav-btn" class="nav-item is-tab fun">Random Fun</a>
-          </div>
-          <div class="navbar-start">
-            <div class="navbar-item is-pulled-left">
-              <div class="field is-grouped">
-                <p class="control">
-                  <input class="input" id="user-input" type="text" placeholder="Favorite Cocktail?">
-                </p>
-                <p class="control">
-                  <a class="button" id="search-cocktails">
-                    <span class="icon">
-                      <i class="fas fa-search" aria-hidden="true"></i>
-                    </span>
-                  </a>
-                </p>
+          <div class="navbar-start is-mobile">
+            <a id="nav-btn" class="nav-item is-tab is-active home is-mobile">Home</a>
+            <a id="nav-btn" class="nav-item is-tab spirit is-mobile">Spirit Type</a>
+            <a id="nav-btn" class="nav-item is-tab fun is-mobile">Random Fun</a>
+            <h1 class="title text-center"><strong>Drinking@<p class="fa fa-home"></p>ome</p></strong></h1>
+            <div class="navbar-start">
+              <div class="navbar-item">
+                <div id="search-box" class="field is-grouped">
+                  <p class="control">
+                    <input class="input" id="user-input" type="text" placeholder="Favorite Cocktail?">
+                  </p>
+                  <p class="control">
+                    <a class="button" id="search-cocktails">
+                      <span class="icon">
+                        <i class="fas fa-search" aria-hidden="true"></i>
+                      </span>
+                    </a>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -75,34 +48,56 @@
     </div>
 
     <!-- Home Page  -->
-    <div id="home-pg" class="hero">
-      <div class="hero-body">
-        <div class="title is-ancestor">
-          <div class="tile is-vertical is-8">
-            <div class="tile is-parent is-vertical">
-              <div class="title is-child box">
-                <h1 class="title2">Welcome to Drinking@Home!</h1>
-                <figure class="image is-128x128 home-img">
-                  <img src="./assets/tulips-drink-and-books.jpg" alt="whiskey drink and books" id="home-img" />
-                </figure>
-                <p class="paragraph">
-                  While you’re doing your part by staying indoors, we’re doing our part by
-                  helping you get through the
-                  quarantine one drink at a time. Simply choose what spirits you have on hand and we’ll direct you
-                  to a
-                  delicious recipe. Vodka, Whisky, rum? It’s all here. All you have to do is point, click, and
-                  drink.
-                </p>
-                <footer>
-                  <h3 class="signature">Cheers, and Happy Quarantine!</h3>
-                </footer>
+    <div id="home-pg" class="hero is-flex">
+      <div class="tile is-ancestor">
+        <!-- <div class="tile is-4 is-vertical is-parent">
+          <div class="tile is-child box">
+            <div id="clockdiv"  class="is-pulled-left" display="is-inline-block">
+              <p class="title">Quarantine Count</p>
+              <div class="content">
+                <div id="clockdiv" class="is-pulled-left" display="is-inline-block">
+                  <div>
+                    <span class="months" id="months"></span>
+                    <div class="smalltext">Months</div>
+                  </div>
+                  <div>
+                    <span class="weeks" id="weeks"></span>
+                    <div class="smalltext">Weeks</div>
+                  </div>
+                  <div>
+                    <span class="days" id="days"></span>
+                    <div class="smalltext">Days</div>
+                  </div>
+                  <div>
+                    <span class="minutes" id="hours"></span>
+                    <div class="smalltext">Hours</div>
+                  </div>
+                </div>
               </div>
             </div>
+          </div>
+        </div> -->
+        <div class="tile is-parent">
+          <div class="tile is-child box">
+            <h2 class="title2"><strong>Welcome to Drinking@<p class="fa fa-home"></p>ome!</strong></h2>
+            <hr>
+            <figure class="image is-128x128 home-img">
+              <img src="./assets/tulips-drink-and-books.jpg" alt="whiskey drink and books" id="home-img" />
+            </figure>
+            <p class="paragraph">
+              While you’re doing your part by staying indoors, we’re doing our part by
+              helping you get through the quarantine one drink at a time. Simply choose what spirits you have on hand
+              and we’ll direct you
+              to a delicious recipe. Vodka, Whisky, rum? It’s all here. All you have to do is point, click, and
+              drink.
+            </p>
+            <footer>
+              <h3 class="signature">Cheers, and Happy Quarantine!</h3>
+            </footer>
           </div>
         </div>
       </div>
     </div>
-  </div>
   </div>
 
   <!-- Recipes by spirit  -->
@@ -204,16 +199,16 @@
           </div>
         </div>
 
-          <div class="spirit-info column is-full"> </div>
-          <div class="card column">
-            <div class="spirit-recipes card-content"> </div>
-          </div>
+        <div class="spirit-info column is-full"> </div>
+        <div class="card column">
+          <div class="spirit-recipes card-content"> </div>
         </div>
-
-      </div>
       </div>
 
-    </main>
+  </div>
+  </div>
+
+  </main>
   </div>
   <!-- end of page -->
   <!-- Fun page -->
