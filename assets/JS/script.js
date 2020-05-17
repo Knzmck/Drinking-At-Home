@@ -1,30 +1,31 @@
 var giphyApiKey = "bkAxzVVfXtpuYo0AmrdqJO1Gp3erKjJE";
 $(document).ready(function () {
-    $.ageCheck({
-        minAge: 21
-    });
-    startCount();
-    function startCount() {
-        var today = moment();
-        var then = moment("2020-03-24");
-        var duration = moment.duration(today.diff(then));
-        var months = duration.asMonths();
-        var weeks = duration.asWeeks();
-        var days = duration.asDays();
-        var hours = duration.asHours();
-        console.log(months, weeks, days, hours);
-        var cMonths = (Math.trunc(months));
-        var cWeeks = (Math.trunc(weeks))
-        var cDays = (Math.trunc(days))
-        var cHours = (Math.trunc(hours))
-        console.log(cMonths, cWeeks, cDays, cHours);
-        $("#months").text(cMonths);
-        $("#weeks").text(cWeeks);
-        $("#days").text(cDays);
-        $("#hours").text(cHours);
-    }
+    // $.ageCheck({
+    //     minAge: 21
+    // });
+    // startCount();
+    // function startCount() {
+    //     var today = moment();
+    //     var then = moment("2020-03-24");
+    //     var duration = moment.duration(today.diff(then));
+    //     var months = duration.asMonths();
+    //     var weeks = duration.asWeeks();
+    //     var days = duration.asDays();
+    //     var hours = duration.asHours();
+    //     console.log(months, weeks, days, hours);
+    //     var cMonths = (Math.trunc(months));
+    //     var cWeeks = (Math.trunc(weeks))
+    //     var cDays = (Math.trunc(days))
+    //     var cHours = (Math.trunc(hours))
+    //     console.log(cMonths, cWeeks, cDays, cHours);
+    //     $("#months").text(cMonths);
+    //     $("#weeks").text(cWeeks);
+    //     $("#days").text(cDays);
+    //     $("#hours").text(cHours);
+    // }
     // Get Method using spirit name or ingredient 
     $(".spirit").on("click", function () {
+        console.log("test")
         $('.spirit-recipes').html('');
         $('.spirit-info').html('');
         var spirit = $(this).attr("id");
