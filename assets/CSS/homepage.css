@@ -1,27 +1,6 @@
-#clockdiv > div{
-    padding: 5px;
-    border-radius: 1px;
-    background: rgba(131, 40, 4, 0.685);
-    display: inline-block;
-    justify-content: center;
-}
-
-#clockdiv div > span{
-    padding: 5px;
-    border-radius: 1px;
-    background: rgba(100, 52, 6, 0.514);
-    display: inline-block;
-}
-
-
 .smalltext{
     padding-top: 5px;
     font-size: 16px;
-}
-
-a.button {
-    background-color: darkgoldenrod;
-    color: rgb(68, 41, 8);
 }
 
 .mt-2 {
@@ -36,7 +15,6 @@ a.button {
     padding: 1.25rem 1.5rem 1.25rem 1.5rem !important;
 }
 
-
 .paragraph {
     display: flex;
     justify-content: center;
@@ -46,11 +24,13 @@ a.button {
     color: black;
     margin-top: 30px;
 }
+
 .home-img {
     float: left;
     margin-right: 10px;
     clear:both;
 }
+
 .paragraph {
     color: black;
     font-size: medium;
