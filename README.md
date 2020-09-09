@@ -45,7 +45,7 @@ THEN I’m presented with error
 
 ## Demo
 
-[View demo](https://anverch.github.io/Drinking-At-Home/)
+[View demo](https://knzmck.github.io/Drinking-At-Home/)  
 
 ## Developers
 
@@ -59,9 +59,5 @@ THEN I’m presented with error
 
   <img src="https://avatars.githubusercontent.com/Anverch" height="90" width="90">
 
-Aleks Saiyan <a href="https://github.com/anverch">@Anverch</a>
-
-
-
-[View demo](https://anverch.github.io/Drinking-At-Home/)
+Aleks Saiyan <a href="https://github.com/anverch">@Anverch</a>  
 
