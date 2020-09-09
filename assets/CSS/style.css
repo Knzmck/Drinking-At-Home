@@ -1,63 +1,63 @@
+h1 {
+  color: whitesmoke  !important;
+  margin-top: 22px !important;
+  text-shadow: #000 0px 0px 2px;
+}
+
+body {
+  background-color: #3273dc !important;
+}
+
+#search-box {
+  margin-left: 8em;
+}
+
 .hero.is-light .title {
   margin: 0%;
   color: rgb(0, 0, 0);
 }
+
 #nav-btn {
-  color:rgb(224, 193, 153);
-  background-color: rgba(0, 0, 0, 0.233);
+  color:whitesmoke;
+  font-weight: bold;
   border-radius: 10%;
   display: inline-block;
   height: fit-content;
   border:none;
-  margin:20px;
+  margin:30px;
+  text-shadow: #000 0px 0px 1px
 }
+
 .header {
-    text-align: center;
+  text-align: center;
   color: rgb(20, 15, 1);
   font-weight: 100;
   font-size: 30px;
-  font-weight: bold;
+  
 }
-#clockdiv {
-    font-family: sans-serif;
-    font-weight:100;
-    text-align:center;
-    font-size:20px;
-}
-#clockdiv > div {
-  padding: 5px;
-  border-radius: 1px;
-  background: rgba(138, 60, 8, 0.322);
-  display: inline-block;
-}
-#clockdiv div > span {
-  padding: 5px;
-  border-radius: 1px;
-  background: rgba(75, 36, 5, 0.315);
-  display: inline-block;
-  color: rgb(209, 196, 179);
-}
+
 .smalltext {
   padding-top: 5px;
   font-size: 16px;
   color: rgb(209, 196, 179);
 }
+
 .nav-bar {
   margin-bottom: 5%;
 }
+
 .text-center {
     text-align: center;
 }
-a.button {
-  background-color: darkgoldenrod;
-  color: rgb(68, 41, 8);
-}
+
 .mt-2 {
   margin-top: 20px;
 }
+
 .img-radius {
   border-radius: 2%;
 }
+
 .notification {
   padding: 1.25rem 1.5rem 1.25rem 1.5rem !important;
 }
@@ -66,40 +66,53 @@ a.button {
   clear: both;
   font-size: small;
 }
-.spirit-recipes {
+
+/* .spirit-recipes {
   margin-right: auto;
   margin-left: auto;
   padding-right: 10px;
   padding-left: 10px;
-}
+} */
 
 .drink-name {
   font-weight: bold;
   padding-bottom: 10px;
 }
 
-.bottle-img {
+/* .bottle-img {
   margin-top: 30px;
-}
-.spirit-dsc {
+  margin-top: 30px;
+} */
+
+/* .spirit-dsc {
     font-size: small;
-}
+} */
+
 .ingr-text {
     all: none;
     font-size: small;
-  }
+}
+
 .spirit-info {
 text-align: center;
 }
+
 .spiritheader {
     all: none;
     font-weight: bold;
 }
-#home-pg {
-    background-color: rgba(197, 144, 29, 0.527);
-}
+
 .recipe-header {
     all: none;
     color: black;
     font-weight: bold;
+}
+
+.bg-image {
+  background: linear-gradient( rgba(0, 0, 0, .5 ), rgba(0, 0, 0, .2 )), url('../drinkignatHome.jpg');
+  background-size: 100% 100%;
+}
+
+.back-color {
+  background-color: #3273dc;
 }
